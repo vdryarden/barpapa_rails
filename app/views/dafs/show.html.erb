@@ -1,0 +1,30 @@
+<h1>Dafs#show</h1>
+<div id='gmara'>
+  <h2> gmara </h2>
+  <% @paragraphs.each do |pa| %>
+    <% if pa.has_title? %>
+      <h3> <%= pa.title %> </h3> 
+    <% end %>
+    <p> <%= pa.content %> </p>
+  <% end %>
+</div>
+
+<div id='rashi'>
+  <h2> rashi </h2>
+  <% @rashi.each do |p| %>
+    <span class='p'>
+      <h3> <%= p.title %> </h3> 
+      <p> <%= p.content %> </p>
+    </span>
+  <% end %>
+</div>
+
+<div id='tosfot'>
+  <h2> tosfot </h2>
+  <% @tosfot.each do |p| %>
+    <span class='p'>
+      <h3> <%= p.title %> </h3> 
+      <p> <%= p.content %> </p>
+    </span>
+  <% end %>
+</div>
