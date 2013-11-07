@@ -1,13 +1,31 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the top of the
- * compiled file, but it's generally better to create a new file per style scope.
- *
  *= require_self
  *= require_tree .
  */
+
+body {
+  direction: rtl;
+	font-size: 12px;
+	font-family: sans-serif;
+	
+  margin: 0;
+}
+
+section {
+  background-image: 
+    url('crn.jpg'), 
+    url('top.jpg'), 
+    url('side.jpg'), 
+    url('bg.jpg');
+  background-repeat: 
+    no-repeat,  
+    repeat-x, 
+    repeat-y, 
+    repeat;
+  padding: 16px 0 0 113px; /* bg image edges */
+}
+article {
+	max-width: 1300px;
+	padding: 8px;
+	margin: auto;
+}

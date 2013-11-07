@@ -1,4 +1,5 @@
 class Pirush < ActiveRecord::Base
+  belongs_to :paragraph
 end
 
 

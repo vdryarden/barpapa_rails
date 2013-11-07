@@ -6,9 +6,23 @@
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body class='<%= params["controller"] %>'>
 
-<%= yield %>
+<header>
+  בר-פפא
+</header>
+<nav>
+  תפריט
+</nav>
+
+<section>
+  <article>
+    <%= yield %>
+  </article>
+  <footer>
+    footer
+  </footer>
+</section>
 
 </body>
 </html>

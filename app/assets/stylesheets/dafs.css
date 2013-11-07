@@ -1,4 +1,53 @@
-/*
-  Place all the styles related to the matching controller here.
-  They will automatically be included in application.css.
-*/
+.dafs .column{
+  float: right;
+  
+  padding: 0 10px;
+       box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.dafs .column#tosfot{
+  width: 20%;
+}
+.dafs .column#gmara{
+  width: 40%;
+  font: 30px/38px david,serif;
+}
+.dafs .column#rashi{
+  width: 40%;
+}
+
+.dafs .column#gmara p{
+  text-align: center;
+}
+
+.dafs .pi{
+  display: block;
+  margin: 2px 0;
+}
+.dafs .pi h3 {
+  display: inline;
+}
+.dafs .pi p {
+  display: inline;
+}
+
+
+/* clearfix */
+.dafs article:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.dafs article {
+  display: inline-block;
+}
+html[xmlns] .dafs article {
+  display: block;
+}
+* html .dafs article {
+  height: 1%;
+}
