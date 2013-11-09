@@ -23,12 +23,10 @@ function parsePirushes(){
       heights[index]= $('#tmp').offset().top + FixForPiHeight;
       $('#tmp').remove();
     });
-    
+  
     $pirushes.each(function(){
       index= $(this).data('index')
-      if( $(this).is(':first-child') )
-        prevBottom= 0;
-      else prevBottom=
+      prevBottom=  
         $(this).prev().offset().top + $(this).prev().outerHeight(true);
       
       $(this).offset({ 
