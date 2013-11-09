@@ -8,9 +8,50 @@ body {
 	font-size: 12px;
 	font-family: sans-serif;
 	
+	background-color: #e9e7e6;
   margin: 0;
 }
 
+header {
+  border-bottom: 1px solid #700000;
+  
+  margin: 30px 0;
+  padding-bottom: 2px;
+  width: 100%;
+}
+#logo {
+  background-color: #700000;
+  border-radius: 3px;
+  
+  float: right;
+  height: 110px;
+}
+header ul {
+  display: block;
+  margin: -1em 0 0;
+  padding: 0;
+
+  font-weight: bold;
+}
+header li {
+  background-color: #700000;
+  border-radius: 3px;
+  
+  display: block;
+  float: right;
+  
+  margin: 0 10px;
+  padding: 20px 16px;
+}
+header nav {
+  float: left;
+  margin-top: 68px;
+}
+nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+/* old book style
 section {
   background-image: 
     url('crn.jpg'), 
@@ -22,10 +63,44 @@ section {
     repeat-x, 
     repeat-y, 
     repeat;
-  padding: 16px 0 0 113px; /* bg image edges */
+  padding: 16px 0 0 113px; /* bg image edges /
 }
+*/
+section {
+  background-image: url("bg-crn.png"), url("bg-side.png");
+  background-repeat: no-repeat, repeat-y;
+  background-color: #FFF6C3;
+  
+  border-left: 25px solid #700000;
+  border-top:  25px solid #700000;
+  border-top-left-radius: 15px;
+  
+  margin-left: 10px;
+  padding-left: 25px; /* bg image edges */
+}
+
 article {
 	max-width: 1300px;
 	padding: 8px;
 	margin: auto;
+}
+
+
+/* clearfix */
+header:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+header {
+  display: inline-block;
+}
+html[xmlns] header {
+  display: block;
+}
+* html header {
+  height: 1%;
 }
