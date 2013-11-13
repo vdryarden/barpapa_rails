@@ -3,6 +3,15 @@
  *= require_tree .
  */
 
+p{
+  margin-top: 0;
+}
+h1, h2, h3{
+  margin-bottom: 0;
+  color: #700000;
+}
+
+
 body {
   direction: rtl;
 	font-size: 12px;
@@ -11,45 +20,21 @@ body {
 	background-color: #e9e7e6;
   margin: 0;
 }
-
-
-/* old book style
 section {
-  background-image: 
-    url('crn.jpg'), 
-    url('top.jpg'), 
-    url('side.jpg'), 
-    url('bg.jpg');
-  background-repeat: 
-    no-repeat,  
-    repeat-x, 
-    repeat-y, 
-    repeat;
-  padding: 16px 0 0 113px; /* bg image edges /
-}
-*/
-section {
-  background-image: url("bg-crn.png"), url("bg-side.png");
-  background-repeat: no-repeat, repeat-y;
-  background-color: #FFF6C3;
+  border-left: 10px solid #700000;
+  padding-top: 30px;
   
-  border-left: 25px solid #700000;
-  border-top:  25px solid #700000;
-  border-top-left-radius: 15px;
-  
-  margin-left: 10px;
-  padding-left: 25px; /* bg image edges */
+  margin-top:-4px; /* unknown-bug fix */
 }
-
 article {
 	max-width: 1300px;
-	padding: 8px;
 	margin: auto;
 }
 
 footer {
     background-color: #301616;
     color: #FFFFFF;
-    margin-left: 10px;
     padding: 20px 10px;
+    
+    border-left: 10px solid white;
 }
